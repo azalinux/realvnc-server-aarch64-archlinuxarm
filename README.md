@@ -1,6 +1,6 @@
 # realvnc-server-aarch64-archlinuxarm
 
-Real VNC Server for Raspberry Pi4 64bit for vanilla Arch Linux AARCH64
+Real VNC Server for Raspberry Pi4 64bit for vanilla Arch Linux ARM AARCH64
 
 This AUR package will install Realvnc Server aarch64 package on a vanilla install of ArchLinux ARM64 installation on a Raspberry Pi4.
 
