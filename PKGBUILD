@@ -19,7 +19,8 @@ source_aarch64=("http://archive.raspberrypi.org/debian/pool/main/r/realvnc-vnc/r
 md5sums_aarch64=('7e6d0bea799a71c75c72b82073e5f3e6')
 
 package() {
-     
+    
+    pacman -U raspberrypi-firmware-20210128-2-aarch64.pkg.tar.xz
     bsdtar -xv -C "${pkgdir}" -f "${srcdir}/"data.tar.*
     mkdir -p "${pkgdir}/usr/share/licenses/${pkgname}"
     ln -s /usr/share/doc/${pkgname}/copyright "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
