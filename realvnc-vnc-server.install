@@ -1,5 +1,5 @@
 post_install() {
-    pacman -U raspberrypi-firmware-20210128-2-aarch64.pkg.tar.xz
+    
     vncinitconfig --install-defaults
     echo 'To use VNC Connect, visit https://www.realvnc.com/en/products/vnc/#licensing for a subscription.'
  
