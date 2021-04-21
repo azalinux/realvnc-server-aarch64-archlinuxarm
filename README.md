@@ -1,4 +1,4 @@
-# realvnc-server-aarch64-archlinuxarm
+# realvnc-server-aarch64-archlinuxarm64
 
 RealVNC Server for Raspberry Pi4 64bit for vanilla Arch Linux ARM AARCH64
 
