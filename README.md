@@ -18,7 +18,7 @@ wget https://github.com/azalinux/realvnc-server-aarch64-archlinuxarm/releases/do
 
 pacman -U realvnc-vnc-server-6.7.2.43081-1-aarch64.pkg.tar.xz
 
-git clone this package to compile manually:
+OR to git clone this package to compile manually:
 
 git clone https://github.com/azalinux/realvnc-server-aarch64-archlinuxarm.git
 
