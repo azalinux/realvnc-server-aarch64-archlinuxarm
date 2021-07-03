@@ -8,7 +8,7 @@ This is been tested on many desktop environments including XFCE, MATE & KDE Plas
 
 BEFORE YOU INSTALL THIS PACKAGE:
 
-Make sure you have the package base-devel installed fully. For example, a default install of Manjaro Arch ARM64 only has some components of base-devel installed by default on a fresh installation so please perform the following command to ensure all prerequists for building the package are met:   pacman -S base-devel
+Make sure you have the package base-devel installed fully. For example, a default install of Arch Linux ARM64 only has some components of base-devel installed by default on a fresh installation so please perform the following command to ensure all prerequists for building the package are met:   pacman -S base-devel
 
 Installation:
 
