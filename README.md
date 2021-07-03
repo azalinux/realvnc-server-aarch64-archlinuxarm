@@ -12,6 +12,12 @@ Make sure you have the package base-devel installed fully. For example, a defaul
 
 Installation:
 
+You can use the precompiled package in my Releases page to download & install:
+
+wget https://github.com/azalinux/realvnc-server-aarch64-manjaro/releases/download/realvnc-vnc-server-6.7.2.43081-1-aarch64/realvnc-vnc-server-6.7.2.43081-1-aarch64.pkg.tar.zst
+
+pacman -U realvnc-vnc-server-6.7.2.43081-1-aarch64.pkg.tar.zst
+
 git clone this package to compile manually:
 
 git clone https://github.com/azalinux/realvnc-server-aarch64-archlinuxarm.git
