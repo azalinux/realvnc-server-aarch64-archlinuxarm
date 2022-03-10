@@ -17,7 +17,7 @@ conflicts=('tightvnc' 'tigervnc' 'turbovnc')
 source_aarch64=("https://www.realvnc.com/download/file/vnc.files/VNC-Server-${pkgver}-Linux-ARM64.deb")
 
 
-md5sums_aarch64=('97635c93c56fa1ec550095162abc5648')
+md5sums_aarch64=('e8e6b38a3b37ba2e12b03269aac9db71')
 
 package() {
     
