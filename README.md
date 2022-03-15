@@ -32,8 +32,8 @@ FYI: This should be pre-activated as the source is pre-activated for use with Ra
 
 Don't forget to enable & start the systemd service: 
 ```
-sudo systemctl enable vncserver-x11-serviced
-sudo systemctl start vncserver-x11-serviced
+$ sudo systemctl enable vncserver-x11-serviced
+$ sudo systemctl start vncserver-x11-serviced
 ```
 And thats it! A working 64bit RealVNC server running on ArchLinux ARM64!
 
