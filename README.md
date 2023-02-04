@@ -14,11 +14,13 @@ $ sudo pacman -S base-devel
 ```
 Installation:
 
+***Warning - Version 7 does NOT accept Version 6 Offline 25 number enterprise keys!***
+
 You can use the precompiled package in my Releases page to download & install:
 
 ```
-$ wget https://github.com/azalinux/realvnc-server-aarch64-archlinuxarm/releases/download/realvnc-server-aarch64-v6.11.0/realvnc-vnc-server-6.11.0-1-aarch64.pkg.tar.xz
-$ sudo pacman -U realvnc-vnc-server-6.11.0-1-aarch64.pkg.tar.xz
+$ wget https://github.com/azalinux/realvnc-server-aarch64-archlinuxarm/releases/download/realvnc-server-aarch64-v7.0.0/realvnc-vnc-server-7.0.0-1-aarch64.pkg.tar.xz
+$ sudo pacman -U realvnc-vnc-server-7.0.0-1-aarch64.pkg.tar.xz
 ```
 
 OR to git clone this package to compile manually:
