@@ -14,6 +14,8 @@ $ sudo pacman -S base-devel
 ```
 Installation:
 
+***For verions 7+, I highly recommend you install this manually via cloning the GIT repo [instructions below] - only use the binary package if you DON"T have RealVNC installed!***
+
 ***Warning - Version 7 does NOT accept Version 6 Offline 25 number enterprise keys!***
 
 You can use the precompiled package in my Releases page to download & install:
