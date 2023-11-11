@@ -25,15 +25,15 @@ package() {
     ln -s /usr/share/doc/${pkgname}/copyright "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 if [ ! -d "/opt/vc" ]; then
   sudo mkdir -p /opt/vc/lib
-  sudo tar xvf rpi_userland_libs.tar.gz -C /opt/vc/lib
+  sudo tar xvf "rpi_userland_libs.tar.gz" -C /opt/vc/lib
 else
   echo "/opt/vc exists, moving on"
 fi
 
 if [ ! -f "/opt/vc/lib/libvcos.so" ] || [ ! -f "/usr/lib/libvcos.so.0" ] || [ ! -f "/opt/vc/lib/libvchiq_arm.so" ] || [ ! -f "/usr/lib/libvchiq_arm.so.0" ] || [ ! -f "/opt/vc/lib/libbcm_host.so" ] || [ ! -f "/usr/lib/libbcm_host.so.0" ]; then
-  sudo ln -s /opt/vc/lib/libvcos.so /usr/lib64/libvcos.so.0
-  sudo ln -s /opt/vc/lib/libvchiq_arm.so /usr/lib64/libvchiq_arm.so.0
-  sudo ln -s /opt/vc/lib/libbcm_host.so /usr/lib64/libbcm_host.so.0
+  sudo ln -s /opt/vc/lib/libvcos.so /usr/lib/libvcos.so.0
+  sudo ln -s /opt/vc/lib/libvchiq_arm.so /usr/lib/libvchiq_arm.so.0
+  sudo ln -s /opt/vc/lib/libbcm_host.so /usr/lib/libbcm_host.so.0
 else
   echo "libvcos.so, libvchiq_arm, libbcm_host sym links already exists so moving on..."
 fi
