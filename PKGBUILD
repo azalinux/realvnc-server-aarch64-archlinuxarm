@@ -14,12 +14,18 @@ optdepends=('cups: Printer support')
 install='realvnc-vnc-server.install'
 conflicts=('tightvnc' 'tigervnc' 'turbovnc')
 
-source_aarch64=("https://downloads.realvnc.com/download/file/vnc.files/VNC-Server-${pkgver}-Linux-ARM64.deb" "https://github.com/azalinux/realvnc-server-aarch64-archlinuxarm/raw/main/rpi_userland_libs.tar.gz")
-sha256sums_aarch64=('b2f88cc9e695bf49482bdc05e529769afaf326bcded149f4d7d2182170e36136' '3c779f82a25632f5470c3dbdab0ebd5ce4f091ac5bec18b50cd1fe9f9b7bba9e')
+source_aarch64=("https://downloads.realvnc.com/download/file/vnc.files/VNC-Server-${pkgver}-Linux-ARM64.deb" "https://github.com/azalinux/realvnc-server-aarch64-fedora/raw/main/pifirmware_libs.tar.gz")
+sha256sums_aarch64=('b2f88cc9e695bf49482bdc05e529769afaf326bcded149f4d7d2182170e36136' '224709560792f4347ad8e3700dac72fd341582081d2b7c26d9a8e33d583af703')
 
 build() {
   # Extract the source files
-  tar xvf "rpi_userland_libs.tar.gz" -C /opt/vc/lib
+  if [ ! -d "/opt/vc" ]; then
+  sudo mkdir -p /opt/vc
+  sudo tar xvf pifirmware_libs.tar.gz -C /opt/vc/
+  
+  else
+    echo "/opt/vc exists, moving on.."
+ fi   
   if [ ! -f "/opt/vc/lib/libvcos.so" ] || [ ! -f "/usr/lib/libvcos.so.0" ] || [ ! -f "/opt/vc/lib/libvchiq_arm.so" ] || [ ! -f "/usr/lib/libvchiq_arm.so.0" ] || [ ! -f "/opt/vc/lib/libbcm_host.so" ] || [ ! -f "/usr/lib/libbcm_host.so.0" ]; then
   sudo ln -s /opt/vc/lib/libvcos.so /usr/lib/libvcos.so.0
   sudo ln -s /opt/vc/lib/libvchiq_arm.so /usr/lib/libvchiq_arm.so.0
