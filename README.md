@@ -27,8 +27,8 @@ Installation:
 You can use the precompiled package in my Releases page to download & install:
 
 ```
-$ wget https://github.com/azalinux/realvnc-server-aarch64-archlinuxarm/releases/download/v7.8.0/realvnc-vnc-server-7.8.0-1-aarch64.pkg.tar.xz
-$ sudo pacman -U realvnc-vnc-server-7.8.0-1-aarch64.pkg.tar.xz
+$ wget https://github.com/azalinux/realvnc-server-aarch64-archlinuxarm/releases/download/v7.9.0/realvnc-vnc-server-7.9.0-1-aarch64.pkg.tar.xz
+$ sudo pacman -U realvnc-vnc-server-7.9.0-1-aarch64.pkg.tar.xz
 ```
 
 OR to git clone this package to compile manually:
