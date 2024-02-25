@@ -2,7 +2,7 @@
 
 
 >[!IMPORTANT]
->November 2023 update to Arch stable branch will break RealVNC Server!!!  I have addressed this issue in my v7.8.0 release already.
+>November 2023 update to Arch stable branch will break RealVNC Server!!!  I have addressed this issue in versions v7.8.0 (+ all future versions) already.
 >Issue is the package 'raspberrypi-userland-aarch64-git' has been replaced by 'raspberrypi-utils' which doesn't include the required lib files needed in /usr/lib
 
 
@@ -35,6 +35,7 @@ OR to git clone this package to compile manually:
 
 ```
 $ git clone https://github.com/azalinux/realvnc-server-aarch64-archlinuxarm.git
+$ cd realvnc-server-aarch64-archlinuxarm
 $ makepkg -si
 ```
 
