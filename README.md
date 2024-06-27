@@ -1,11 +1,5 @@
 # realvnc-server-aarch64-archlinuxarm64
 
-
->[!IMPORTANT]
->November 2023 update to Arch stable branch will break RealVNC Server!!!  I have addressed this issue in versions v7.8.0 (+ all future versions) already.
->Issue is the package 'raspberrypi-userland-aarch64-git' has been replaced by 'raspberrypi-utils' which doesn't include the required lib files needed in /usr/lib
-
-
 RealVNC Server for Raspberry Pi4 64bit for vanilla Arch Linux ARM AARCH64
 
 This AUR package will install RealVNC Server aarch64 package on a vanilla install of ArchLinux ARM64 installation on a Raspberry Pi4.
@@ -27,8 +21,8 @@ Installation:
 You can use the precompiled package in my Releases page to download & install:
 
 ```
-$ wget https://github.com/azalinux/realvnc-server-aarch64-archlinuxarm/releases/download/v7.11.0/realvnc-vnc-server-7.11.0-1-aarch64.pkg.tar.xz
-$ sudo pacman -U realvnc-vnc-server-7.11.0-1-aarch64.pkg.tar.xz
+$ wget https://github.com/azalinux/realvnc-server-aarch64-archlinuxarm/releases/download/v7.12.0/realvnc-vnc-server-7.12.0-1-aarch64.pkg.tar.xz
+$ sudo pacman -U realvnc-vnc-server-7.12.0-1-aarch64.pkg.tar.xz
 ```
 
 OR to git clone this package to compile manually:
